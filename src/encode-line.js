@@ -15,7 +15,7 @@ function encodeLine(str) {
   let result = String();
   for (let i = 0; i < str.length; i++) {
     if (str[i] === str[i + 1]){
-      count = count + 1;
+      count++;
     } else {
       result = result + (count + str[i]);
       count = 1;
